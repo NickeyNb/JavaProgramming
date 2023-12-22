@@ -13,10 +13,12 @@ public class Main {
 
         System.out.print("Enter the age : ");
         int age = sc.nextInt();
-
+    
+        double height = 5.5;
         // Output
         System.out.println("Name is : "+fullName);
         System.out.println("Age is : " + age);
+        System.out.println("Height is : " + height);
     }
 
 }
