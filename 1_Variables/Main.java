@@ -1,14 +1,22 @@
+
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Variables in Java");
         
-        int age = 21;
-        double height = 5.5;
-        String name = "Bhupendra Jogi";
+        // Input
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the name : ");
+        // String firstName = sc.next();    // takes only one token nickey nb = nickey
+        String fullName = sc.nextLine();
 
-        System.out.println("Name is : "+name);
+        System.out.print("Enter the age : ");
+        int age = sc.nextInt();
+
+        // Output
+        System.out.println("Name is : "+fullName);
         System.out.println("Age is : " + age);
-        System.out.println("Height is : " + height);
     }
 
 }
