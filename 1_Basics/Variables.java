@@ -1,8 +1,10 @@
+// Variables in java(Compiler ignores comments)
 
 import java.util.*;
 
-public class Main {
+public class Variables {
     public static void main(String[] args) {
+        
         System.out.println("Variables in Java");
         
         // Input
@@ -13,12 +15,16 @@ public class Main {
 
         System.out.print("Enter the age : ");
         int age = sc.nextInt();
-    
-        double height = 5.5;
+        
+        System.out.print("Enter the height : ");
+        double height = sc.nextDouble();
+
         // Output
         System.out.println("Name is : "+fullName);
         System.out.println("Age is : " + age);
         System.out.println("Height is : " + height);
+
+        sc.close();;
     }
 
 }

@@ -1,3 +1,12 @@
-=> Data Types
+=> Name of file same as Name of class
+
+=> javac Main.java
+   java Main
+
+=> 1-Variables
+= Data Types
 Primitive = byte(8 bits), short, char(2 byte), boolean(1 bye), int(4 byte), long(8 bye), float(4 byte), double(8 byte) in x64
 Non-Primitive = String, Array, Class, Object, Interface
+=====
+
+=> 2-Conditionals
