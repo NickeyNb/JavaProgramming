@@ -1,4 +1,4 @@
-=> Name of file same as Name of class
+=> Name of file = Name of class
 
 => javac Main.java
    java Main
