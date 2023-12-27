@@ -9,7 +9,7 @@ Primitive(stored in stack) = byte(8 bits), short, char('')(2 byte), boolean(1 by
 // we can't break primitive data types any further
 
 
-Non-Primitive(stored in heap) = String(starts with ""), Array, Class, Object, Interface
+Non-Primitive/Objects(stored in heap) = String(starts with ""), Array, Class, Object, Interface
 =====
 
 => 2-Conditionals

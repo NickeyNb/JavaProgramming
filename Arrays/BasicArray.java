@@ -1,4 +1,6 @@
 // Arrays in java = List of items of the same type(zero-indexed)
+// collection of data types(primitives or objects)
+
 // Basic input output in 1-D and 2-D arrays.
 
 import java.util.*;
@@ -12,14 +14,18 @@ public class BasicArray {
         System.out.print("Enter the size of 1-D array : ");        
         int size = sc.nextInt();    // can be find arr.length;
 
+        // int[] arr=new int[5];
+        // it states that arr is a reference variable pointing to an Array object in the heap that contain int type elements.
         
         int[] arr;  // Declaration of array, arr is getting defined in the stack (happens at compile time)
-
         arr = new int[size];    // initialization: actually here object is being created in the memory(heap).(happens at run time)
-        // new is used to create an object
-        // arr(reference var) is pointing to this object in the heap
+        // new is used to create an object in heap memory. => Dynamic memory allocation
+        // arr(reference var) is pointing to Array object in the heap, which can anywhere be in heap
         // heap object is not continious
         // Java : array may not be continious (as it depends on jvm)
+
+        // System.out.println(arr[0]); // by default it stores 0
+        // if string array then by default it stores null
 
         // input
         System.out.println("Enter values ");
@@ -32,6 +38,12 @@ public class BasicArray {
         for(int i=0;i<arr.length;i++) {
             System.out.print(arr[i]+" ");
         }
+        // for-each
+        for(int val:arr) {  // int val is type of elements in arr. If it will be 2-d it will be int[] as every element will be int[]
+            System.out.println(val);
+        }
+        // Arrays class
+        System.out.println(Arrays.toString(arr)); // [1, 2, 3, 4, 5]  
         sc.close();
 
     }
@@ -62,18 +74,46 @@ public class BasicArray {
             }
             System.out.print("\n");
         }
+        
+        // using Arrays.toString(arr);
+        for(int row=0;row<arr.length;row++) {
+            System.out.println(Arrays.toString(arr[row]));
+        }
 
+        //
+        for(int[] val:arr) {
+            System.out.println(Arrays.toString(val));
+        }
         sc.close();
+    }
+    
+    // extra-stuff about array
+    public static void extraStruff(int[] nums) {
+
+        nums[0] = 100;
+        // changes the original as 
+        // 
+
+        // array of Objects
+        String[] str = new String[3];
+        str[0] ="one";
+        str[1] ="two";
+        str[2] ="three";
+
+        for(int val=0;val<str.length;val++) {
+            System.out.println(str[val]);
+        }
+        //
+        System.out.println(Arrays.toString(str));   // [one, two, three]
+
+        
     }
     public static void main(String[] args) {
         // oneDimArray();
         // twoDimArray();
 
-        String[] str = new String[4];
-        System.out.println(str[0]); // gives null(a literal type)
-
-        // as String is a non-primitive every element will be an object
-        // i.e. reference to str[0]
-        // by default its reference to null
+        int[] arr = {1, 2, 3};
+        extraStruff(arr);   // copy of {1, 2, 3} is passed but nums and arr points to same
+        // so any changes made to nums will affect the original arr
     }    
 }
