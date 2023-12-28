@@ -1,5 +1,7 @@
-import java.util.ArrayList;
-import java.util.Scanner;
+// Error giving when declaring package
+// Linear search
+
+import java.util.*;
 
 public class Search {
     static int linearSearch(ArrayList<Integer> nums, int target) {
