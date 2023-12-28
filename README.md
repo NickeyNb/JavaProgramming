@@ -4,4 +4,4 @@ DSA using Java Programming Language.
 
 ## Sequence
 
-Basics -> Printing(Questions) -> Arrays(Questions) -> Strings(Questions) -> Bit Manipulation(Questions) -> Sorting -> Recursion(Questions) -> OOPs
+Basics -> Arrays(Questions) -> Searching & Sorting -> Strings(Questions) -> Printing(Questions) -> Bit Manipulation(Questions) -> Recursion(Questions) -> OOPs

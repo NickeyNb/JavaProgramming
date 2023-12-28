@@ -14,7 +14,7 @@ public class BasicArrayList {
         // initial capacity is 10
 
         // 2-d array list
-        ArrayList<ArrayList<Integer> > arr = new ArrayList<ArrayList<Integer>>();
+        // ArrayList<ArrayList<Integer> > arr = new ArrayList<ArrayList<Integer>>();
 
         list.add(1);
         list.add(2);
